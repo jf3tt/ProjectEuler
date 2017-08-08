@@ -15,11 +15,9 @@ class Ideone
 		
 		System.out.println(Arrays.toString(array));
 		for (int i=0; i <= (array.length - 1) / 2; i++){
-			tmp2 = array[array.length -1 -i];
 			tmp1 = array[i];
-			array[i] = tmp2;
+			array[i] = array[array.length - 1 -i];
 			array[array.length - 1 -i] = tmp1;
-
 		}
 		System.out.println(Arrays.toString(array));
 	}
